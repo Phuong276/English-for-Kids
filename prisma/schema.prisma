@@ -24,6 +24,8 @@ model User {
   username  String          @unique
   password  String
   name      String
+  levels    Level[]
+  points    Point[]
 
   isDeleted Boolean         @default(false) @map("is_deleted")
   createdAt DateTime        @default(now()) @map("created_at")
@@ -35,6 +37,7 @@ model User {
 model Game {
   id        Int             @id @default(autoincrement())
   name      String          @unique
+  rounds    Round[]
 
   isDeleted Boolean         @default(false) @map("is_deleted")
   createdAt DateTime        @default(now()) @map("created_at")
@@ -46,7 +49,10 @@ model Game {
 model Round {
   id        Int             @id @default(autoincrement())
   name      String          @unique
-  gameId    Int             
+  gameId    Int             @map(name: "game_id")
+  game      Game            @relation(fields: [gameId], references: [id])
+  levels    Level[]
+  questions Question[]
 
   isDeleted Boolean         @default(false) @map("is_deleted")
   createdAt DateTime        @default(now()) @map("created_at")
@@ -55,4 +61,65 @@ model Round {
   @@map("rounds")
 }
 
+model Level {
+  id        Int             @id @default(autoincrement())
+  roundId   Int             @map(name: "round_id")
+  round     Round           @relation(fields: [roundId], references: [id])
+  userId    Int             @map(name: "user_id")
+  user      User            @relation(fields: [userId], references: [id])
+  status    Boolean
+
+  isDeleted Boolean         @default(false) @map("is_deleted")
+  createdAt DateTime        @default(now()) @map("created_at")
+  updatedAt DateTime        @updatedAt @map("updated_at")
+
+  @@map("levels")
+}
+
+model Question {
+  id            Int             @id @default(autoincrement())
+  roundId       Int             @map(name: "round_id")
+  round         Round           @relation(fields: [roundId], references: [id])
+  questionText  String          @map(name: "question_text")
+  questionImage String          @map(name: "question_image")
+  questionAudio String          @map(name: "question_audio")
+  point         Int
+  time          Int
+  answers       Answer[]
+  points        Point[]
+
+  isDeleted     Boolean         @default(false) @map("is_deleted")
+  createdAt     DateTime        @default(now()) @map("created_at")
+  updatedAt     DateTime        @updatedAt @map("updated_at")
+
+  @@map("questions")
+}
+
+model Answer {
+  id            Int             @id @default(autoincrement())
+  questionId    Int             @map(name: "question_id")
+  question      Question        @relation(fields: [questionId], references: [id])
+  answerText    String          @map(name: "answer_text")
+
+  isDeleted     Boolean         @default(false) @map("is_deleted")
+  createdAt     DateTime        @default(now()) @map("created_at")
+  updatedAt     DateTime        @updatedAt @map("updated_at")
+
+  @@map("answers")
+}
+
+model Point {
+  id            Int             @id @default(autoincrement())
+  questionId    Int             @map(name: "question_id")
+  question      Question        @relation(fields: [questionId], references: [id])
+  userId        Int             @map(name: "user_id")
+  user          User            @relation(fields: [userId], references: [id])
+  satus         Boolean         
+
+  isDeleted     Boolean         @default(false) @map("is_deleted")
+  createdAt     DateTime        @default(now()) @map("created_at")
+  updatedAt     DateTime        @updatedAt @map("updated_at")
+
+  @@map("points")
+}
 

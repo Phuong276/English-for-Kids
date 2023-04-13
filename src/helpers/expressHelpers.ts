@@ -1,7 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 import { validationResult } from "express-validator";
 
-import { Role } from "@prisma/client";
 import { messages } from "../commons";
 import { IInformationRequest } from "../dto/IAuthRequestResponse";
 
@@ -95,8 +94,5 @@ export const isAdminPermission = async (
   next: NextFunction
 ) => {
   const user = req.user;
-  if (user?.role === Role.ADMIN) {
-    return next();
-  }
   return res.status(403).json({ error: messages.auth.notPermission });
 };

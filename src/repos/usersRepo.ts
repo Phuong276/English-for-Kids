@@ -34,7 +34,6 @@ export const usersRepo = {
         username: req.username,
         password: hashedPassword,
         name: req.name,
-        role: req.role,
       },
     });
     return user;
@@ -49,30 +48,8 @@ export const usersRepo = {
             username: req.username,
             password: hashedPassword,
             name: req.name,
-            role: req.role,
           },
         });
-        const student = await tx.student.create({
-          data: {
-            userId: user.id,
-            email: req.email,
-            dateOfBirth: new Date(req.dateOfBirth),
-            gender: req.gender,
-            phoneNumber: req.phoneNumber,
-          },
-        });
-        const studentInf: IStudentCreateBody = {
-          username: user.username,
-          password: user.password,
-          name: user.name,
-          role: user.role,
-          userId: student.userId,
-          email: student.email,
-          dateOfBirth: student.dateOfBirth,
-          gender: student.gender,
-          phoneNumber: student.phoneNumber,
-        };
-        return studentInf;
       })
       .catch((err) => {
         return res.status(STATUS.NOT_FOUND).json({ error: err });
