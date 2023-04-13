@@ -20,7 +20,6 @@ const isPromise = (maybePromise: unknown) =>
   (typeof maybePromise === "object" || typeof maybePromise === "function") &&
   typeof (maybePromise as Promise<unknown>).then === "function";
 
-// This is a wrapper of middleware, response an server error if there is any failure inside the callback
 export const handleMiddleware =
   (middleware: IMiddleware) =>
   (req: Request, res: Response, next: NextFunction) => {
@@ -33,12 +32,10 @@ export const handleMiddleware =
         error: "Something middleware error",
       });
     }
-
     const promised = isPromise(maybePromise);
     if (!promised) {
       return;
     }
-
     const executePromise = async () => {
       try {
         await maybePromise;
@@ -49,7 +46,6 @@ export const handleMiddleware =
         });
       }
     };
-
     return executePromise();
   };
 
@@ -75,15 +71,6 @@ export const validationResultMiddleware = (
 ) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
-    // const resBody = {
-    //   message: 'Validation errors',
-    //   ...errors.array().reduce((preV, curV) => ({
-    //     ...preV,
-    //     [curV.param]: curV.msg + " in " + curV.location
-    //   }), {})
-    // };
-    // console.log(resBody);
-
     return res.status(400).json(errors.array());
   }
   next();

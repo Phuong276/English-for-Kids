@@ -1,7 +1,5 @@
 import { User } from "@prisma/client";
-import { Response } from "express";
 import { Request } from "express-validator/src/base";
-import { STATUS } from "../commons";
 import prisma from "../utils/db";
 import { hashPassword } from "../utils/stringUtils";
 

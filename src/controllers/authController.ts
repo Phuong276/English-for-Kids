@@ -62,7 +62,6 @@ export const authController = {
       const user = await usersService.findOneById(decode.id);
       const { password, ...newUser } = user;
       const token = await accessToken(newUser as User);
-
       return res.status(STATUS.OK).json({
         data: {
           token: token,
