@@ -1,0 +1,58 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Admin {
+  id        Int             @id @default(autoincrement())
+  username  String          @unique
+  password  String
+
+  isDeleted Boolean         @default(false) @map("is_deleted")
+  createdAt DateTime        @default(now()) @map("created_at")
+  updatedAt DateTime        @updatedAt @map("updated_at")
+
+  @@map("admins")
+}
+
+model User {
+  id        Int             @id @default(autoincrement())
+  username  String          @unique
+  password  String
+  name      String
+
+  isDeleted Boolean         @default(false) @map("is_deleted")
+  createdAt DateTime        @default(now()) @map("created_at")
+  updatedAt DateTime        @updatedAt @map("updated_at")
+
+  @@map("users")
+}
+
+model Game {
+  id        Int             @id @default(autoincrement())
+  name      String          @unique
+
+  isDeleted Boolean         @default(false) @map("is_deleted")
+  createdAt DateTime        @default(now()) @map("created_at")
+  updatedAt DateTime        @updatedAt @map("updated_at")
+
+  @@map("games")
+}
+
+model Round {
+  id        Int             @id @default(autoincrement())
+  name      String          @unique
+  gameId    Int             
+
+  isDeleted Boolean         @default(false) @map("is_deleted")
+  createdAt DateTime        @default(now()) @map("created_at")
+  updatedAt DateTime        @updatedAt @map("updated_at")
+
+  @@map("rounds")
+}
+
+
