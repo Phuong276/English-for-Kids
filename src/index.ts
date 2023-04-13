@@ -2,7 +2,7 @@ import passport from "passport";
 import express from "express";
 import { getPassport } from "./helpers/passportHelpers";
 import authRouter from "./routers/authRouter";
-import studentsRouter from "./routers/studentsRouter";
+import usersRouter from "./routers/usersRouter";
 
 const app = express();
 
@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.use(authRouter);
 
-app.use(authenticate.authenticate("jwt", { session: false }), studentsRouter);
+app.use(authenticate.authenticate("jwt", { session: false }), usersRouter );
 
 app.get(
   "/cow",

@@ -1,4 +1,4 @@
-import { Prisma, Role } from "@prisma/client";
+import { Role } from "@prisma/client";
 
 export const users = [
   {
@@ -10,30 +10,23 @@ export const users = [
   },
   {
     id: 2,
-    username: "nhatpa",
+    username: "admin",
     password: "$2a$10$Sl.FF/O0NokR4cJRxu/35.bwFhohoPUHUgNgjBUoTrvCYMI0Kj/KG",
-    name: "Pham Anh Nhat",
+    name: "Admin",
     role: Role.ADMIN,
   },
   {
     id: 3,
-    username: "tamnt",
+    username: "user01",
     password: "$2a$10$Sl.FF/O0NokR4cJRxu/35.bwFhohoPUHUgNgjBUoTrvCYMI0Kj/KG",
-    name: "Nguyen Thanh Tam",
-    role: Role.TEACHER,
+    name: "User 01",
+    role: Role.USER,
   },
   {
     id: 4,
-    username: "hoan",
+    username: "user02",
     password: "$2a$10$Sl.FF/O0NokR4cJRxu/35.bwFhohoPUHUgNgjBUoTrvCYMI0Kj/KG",
-    name: "Nhat Hoa",
-    role: Role.TEACHER,
-  },
-  {
-    id: 5,
-    username: "hungvt",
-    password: "$2a$10$Sl.FF/O0NokR4cJRxu/35.bwFhohoPUHUgNgjBUoTrvCYMI0Kj/KG",
-    name: "Vo Tuan Hung",
-    role: Role.STUDENT,
+    name: "User 02",
+    role: Role.USER,
   },
 ];

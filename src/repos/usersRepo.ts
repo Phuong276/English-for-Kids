@@ -2,9 +2,6 @@ import { User } from "@prisma/client";
 import { Response } from "express";
 import { Request } from "express-validator/src/base";
 import { STATUS } from "../commons";
-import {
-  IStudentCreateBody,
-} from "../dto/IUserRequestResponse";
 import prisma from "../utils/db";
 import { hashPassword } from "../utils/stringUtils";
 
@@ -17,43 +14,59 @@ export const usersRepo = {
     });
     return user as User;
   },
-
   findOneByUsername: async (username: string) => {
     const user = await prisma.user.findFirst({
       where: {
-        username,
+        username: username,
+        isDeleted: false,
       },
     });
     return user as User;
   },
-
-  registerAdmin: async (req: Request) => {
+  findAll: async (pageSize: number, pageIndex: number) => {
+    const users = await prisma.user.findMany({
+      skip: (pageIndex - 1) * pageSize,
+      take: pageSize,
+      where: {
+        isDeleted: false,
+      },
+    });
+    return users;
+  },
+  create: async (req: Request) => {
     const hashedPassword = await hashPassword(req.password);
     const user = await prisma.user.create({
       data: {
         username: req.username,
         password: hashedPassword,
         name: req.name,
+        role: req.role,
       },
     });
     return user;
   },
-
-  registerStudent: async (req: Request, res: Response) => {
+  update: async (req: Request, id: number) => {
     const hashedPassword = await hashPassword(req.password);
-    const student = await prisma
-      .$transaction(async (tx) => {
-        const user = await tx.user.create({
-          data: {
-            username: req.username,
-            password: hashedPassword,
-            name: req.name,
-          },
-        });
-      })
-      .catch((err) => {
-        return res.status(STATUS.NOT_FOUND).json({ error: err });
-      });
+    const user = await prisma.user.update({
+      where: {
+        id: id,
+      },
+      data: {
+        name: req.name,
+        password: hashedPassword,
+      },
+    });
+    return user;
+  },
+   delete: async (id: number) => {
+    const student = await prisma.user.update({
+      where: {
+        id: id,
+      },
+      data: {
+        isDeleted: true,
+      },
+    });
     return student;
   },
 };

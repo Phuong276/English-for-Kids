@@ -7,18 +7,25 @@ export const authValidation = {
     isNotEmpty("password"),
     validationResultMiddleware,
   ],
-  roleNotNull: [isNotEmpty("role"), validationResultMiddleware],
-  registerAdmin: [
+  register: [
     isNotEmpty("username"),
     isNotEmpty("password"),
     isNotEmpty("name"),
+    isNotEmpty("role"),
     validationResultMiddleware,
-  ],
-  registerStudent: [
-    isNotEmpty("gender"),
-    isNotEmpty("dateOfBirth"),
-    isNotEmpty("phoneNumber"),
-    isNotEmpty("email"),
-    validationResultMiddleware,
-  ],
+  ]
+  // roleNotNull: [isNotEmpty("role"), validationResultMiddleware],
+  // registerAdmin: [
+  //   isNotEmpty("username"),
+  //   isNotEmpty("password"),
+  //   isNotEmpty("name"),
+  //   validationResultMiddleware,
+  // ],
+  // registerStudent: [
+  //   isNotEmpty("gender"),
+  //   isNotEmpty("dateOfBirth"),
+  //   isNotEmpty("phoneNumber"),
+  //   isNotEmpty("email"),
+  //   validationResultMiddleware,
+  // ],
 };

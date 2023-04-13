@@ -7,23 +7,12 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Admin {
-  id        Int             @id @default(autoincrement())
-  username  String          @unique
-  password  String
-
-  isDeleted Boolean         @default(false) @map("is_deleted")
-  createdAt DateTime        @default(now()) @map("created_at")
-  updatedAt DateTime        @updatedAt @map("updated_at")
-
-  @@map("admins")
-}
-
 model User {
   id        Int             @id @default(autoincrement())
   username  String          @unique
   password  String
   name      String
+  role      Role
   levels    Level[]
   points    Point[]
 
@@ -123,3 +112,7 @@ model Point {
   @@map("points")
 }
 
+enum Role {
+  ADMIN
+  USER
+}

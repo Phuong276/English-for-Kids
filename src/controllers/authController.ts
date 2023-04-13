@@ -33,38 +33,17 @@ export const authController = {
       });
     })
   ),
-  registerAdmin: combineMiddleware(
-    ...authValidation.roleNotNull,
-    ...authValidation.registerAdmin,
+  register: combineMiddleware(
+    ...authValidation.register,
     handleMiddleware(async (req: Request, res: Response) => {
       const body = req.body;
       const checkUser = await usersService.findOneByUsername(body.username);
       if (checkUser) {
         return res
           .status(STATUS.NOT_FOUND)
-          .json({ error: messages.errors.users });
+          .json({ error: messages.errors.users.exist });
       }
-      const user = await usersService.register(body, res);
-      return res.status(STATUS.OK).json({
-        data: {
-          user,
-        },
-      });
-    })
-  ),
-  registerStudent: combineMiddleware(
-    ...authValidation.roleNotNull,
-    ...authValidation.registerAdmin,
-    ...authValidation.registerStudent,
-    handleMiddleware(async (req: Request, res: Response) => {
-      const body = req.body;
-      const checkUser = await usersService.findOneByUsername(body.username);
-      if (checkUser) {
-        return res
-          .status(STATUS.NOT_FOUND)
-          .json({ error: messages.errors.users });
-      }
-      const user = await usersService.register(body, res);
+      const user = await usersService.register(body);
       return res.status(200).json({
         data: {
           user,
