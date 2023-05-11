@@ -4,6 +4,8 @@ import { getPassport } from "./helpers/passportHelpers";
 import authRouter from "./routers/authRouter";
 import usersRouter from "./routers/usersRouter";
 import gamesRouter from "./routers/gamesRouter";
+import cors from "cors";
+import morgan from "morgan";
 
 require("dotenv").config();
 
@@ -37,11 +39,12 @@ app.use(passport.initialize());
 
 const authenticate = getPassport();
 app.use(express.json());
+app.use(cors());
+app.use(morgan("tiny"));
 
 app.use(authRouter);
 app.use(usersRouter);
 app.use(gamesRouter);
-
 
 // app.use(authenticate.authenticate("jwt", { session: false }), usersRouter );
 
@@ -53,7 +56,9 @@ app.get(
   }
 );
 
-const server = app.listen(8888, () =>
+const port = process.env.PORT;
+
+const server = app.listen(port, () =>
   console.log(`
-🚀 Server ready at: http://localhost:8888`)
+🚀 Server ready at: http://localhost:${port}`)
 );
