@@ -27,6 +27,7 @@ model Game {
   id        Int             @id @default(autoincrement())
   name      String          @unique
   rounds    Round[]
+  image     String
 
   isDeleted Boolean         @default(false) @map("is_deleted")
   createdAt DateTime        @default(now()) @map("created_at")

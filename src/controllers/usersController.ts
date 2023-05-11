@@ -10,7 +10,7 @@ import { usersService } from "../services";
 
 export const usersController = {
   detail: combineMiddleware(
-    isAdminPermission,
+    // isAdminPermission,
     ...usersValidation.detail,
     handleMiddleware(async (req: Request, res: Response) => {
       const id = +req.params.id;
@@ -26,7 +26,7 @@ export const usersController = {
     })
   ),
   findAll: combineMiddleware(
-    isAdminPermission,
+    // isAdminPermission,
     handleMiddleware(async (req: Request, res: Response) => {
       const { pageIndex = 1, pageSize = 10 } = req.query;
       const users = await usersService.findAll(

@@ -15,7 +15,8 @@
     "nodemon": "^2.0.21",
     "passport": "^0.6.0",
     "passport-jwt": "^4.0.1",
-    "yup": "^1.0.2"
+    "yup": "^1.0.2", 
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
