@@ -6,6 +6,8 @@ import usersRouter from "./routers/usersRouter";
 import gamesRouter from "./routers/gamesRouter";
 import cors from "cors";
 import morgan from "morgan";
+import roundsRouter from "./routers/roundsRouter";
+import questionsRouter from "./routers/questionsRouter";
 
 require("dotenv").config();
 
@@ -45,6 +47,8 @@ app.use(morgan("tiny"));
 app.use(authRouter);
 app.use(usersRouter);
 app.use(gamesRouter);
+app.use(roundsRouter);
+app.use(questionsRouter);
 
 // app.use(authenticate.authenticate("jwt", { session: false }), usersRouter );
 

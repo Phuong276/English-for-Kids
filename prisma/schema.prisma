@@ -43,6 +43,8 @@ model Round {
   game      Game            @relation(fields: [gameId], references: [id])
   levels    Level[]
   questions Question[]
+  image     String
+
 
   isDeleted Boolean         @default(false) @map("is_deleted")
   createdAt DateTime        @default(now()) @map("created_at")
@@ -71,6 +73,7 @@ model Question {
   roundId       Int             @map(name: "round_id")
   round         Round           @relation(fields: [roundId], references: [id])
   questionText  String          @map(name: "question_text")
+  answerText    String          @map(name: "answer_text")
   questionImage String          @map(name: "question_image")
   questionAudio String          @map(name: "question_audio")
   point         Int
