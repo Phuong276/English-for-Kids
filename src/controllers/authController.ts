@@ -27,6 +27,7 @@ export const authController = {
       const refresh = await refreshToken(user.id);
       return res.status(STATUS.OK).json({
         data: {
+          user: user,
           token: token,
           refresh: refresh,
         },

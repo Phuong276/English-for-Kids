@@ -35,10 +35,10 @@ app.use(cors());
 app.use(morgan("tiny"));
 
 app.use(authRouter);
-app.use(usersRouter);
-app.use(gamesRouter);
-app.use(roundsRouter);
-app.use(questionsRouter);
+app.use(authenticate.authenticate("jwt", { session: false }), usersRouter);
+app.use(authenticate.authenticate("jwt", { session: false }), gamesRouter);
+app.use(authenticate.authenticate("jwt", { session: false }), roundsRouter);
+app.use(authenticate.authenticate("jwt", { session: false }), questionsRouter);
 
 // app.use(authenticate.authenticate("jwt", { session: false }), usersRouter );
 
