@@ -1,10 +1,10 @@
 import { Request, Response } from "express";
-import { messages, STATUS } from "../commons";
+import { STATUS } from "../commons";
 import { combineMiddleware, handleMiddleware } from "../helpers";
 import { pointsService } from "../services/pointsService";
 
 export const pointsController = {
-  createPoint: combineMiddleware(
+  upsetPoint: combineMiddleware(
     handleMiddleware(async (req: Request, res: Response) => {
       const body = req.body;
       const check = await pointsService.getPoint(
@@ -13,8 +13,11 @@ export const pointsController = {
       );
 
       if (check) {
-        return res.status(STATUS.BAD_REQUEST).json({
-          error: messages.errors.point.uniquePoint,
+        const point = await pointsService.updatePointStatus(body, check.id);
+        return res.status(STATUS.OK).json({
+          data: {
+            point,
+          },
         });
       }
 

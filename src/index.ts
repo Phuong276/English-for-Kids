@@ -36,13 +36,11 @@ app.use(cors());
 app.use(morgan("tiny"));
 
 app.use(authRouter);
+app.use(authenticate.authenticate("jwt", { session: false }), pointsRouter);
 app.use(authenticate.authenticate("jwt", { session: false }), usersRouter);
 app.use(authenticate.authenticate("jwt", { session: false }), gamesRouter);
 app.use(authenticate.authenticate("jwt", { session: false }), roundsRouter);
 app.use(authenticate.authenticate("jwt", { session: false }), questionsRouter);
-app.use(authenticate.authenticate("jwt", { session: false }), pointsRouter);
-
-// app.use(authenticate.authenticate("jwt", { session: false }), usersRouter );
 
 app.get(
   "/cow",
