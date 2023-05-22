@@ -1,4 +1,4 @@
-import { User } from "@prisma/client";
+import { Role, User } from "@prisma/client";
 import { Request } from "express-validator/src/base";
 import prisma from "../utils/db";
 import { hashPassword } from "../utils/stringUtils";
@@ -27,6 +27,7 @@ export const usersRepo = {
       take: pageSize,
       where: {
         isDeleted: false,
+        role: Role.USER
       },
     });
     return users;

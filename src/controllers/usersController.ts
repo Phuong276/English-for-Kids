@@ -50,6 +50,12 @@ export const usersController = {
           error: messages.errors.users,
         });
       }
+      const checkUser = await usersService.findOneByUsername(body.username);
+      if (checkUser) {
+        return res
+          .status(STATUS.NOT_FOUND)
+          .json({ error: messages.errors.users.exist });
+      }
       const student = await usersService.update(body, +id);
       return res.status(STATUS.OK).json({
         data: student,
