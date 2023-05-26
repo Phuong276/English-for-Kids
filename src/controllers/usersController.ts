@@ -51,7 +51,7 @@ export const usersController = {
         });
       }
       const checkUser = await usersService.findOneByUsername(body.username);
-      if (checkUser) {
+      if (checkUser && checkUser.id !== id) {
         return res
           .status(STATUS.NOT_FOUND)
           .json({ error: messages.errors.users.exist });

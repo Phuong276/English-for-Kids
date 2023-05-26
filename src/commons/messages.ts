@@ -7,6 +7,9 @@ export const messages = {
     point: {
       uniquePoint: "POINT IS EXIST",
     },
+    games: {
+      notFound: "GAME_NOT_FOUND",
+    },
   },
   auth: {
     passwordInvalid: "PASSWORD_INCORRECT",
