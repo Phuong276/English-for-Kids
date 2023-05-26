@@ -26,9 +26,9 @@ export const gamesController = {
     handleMiddleware(async (req: Request, res: Response) => {
       const id = +req.params.id;
       const body = req.body;
-      const student = await gamesService.update(body, +id);
+      const game = await gamesService.update(body, +id);
       return res.status(STATUS.OK).json({
-        data: student,
+        data: game,
       });
     })
   ),

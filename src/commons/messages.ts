@@ -10,6 +10,9 @@ export const messages = {
     games: {
       notFound: "GAME_NOT_FOUND",
     },
+    rounds: {
+      notFound: "GAME_NOT_FOUND",
+    },
   },
   auth: {
     passwordInvalid: "PASSWORD_INCORRECT",

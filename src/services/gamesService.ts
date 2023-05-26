@@ -11,7 +11,7 @@ export const gamesService = {
     return game;
   },
   detail: async (id: number) => {
-    const round = await gamesRepo.detail(id);
-    return round;
+    const game = await gamesRepo.detail(id);
+    return game;
   },
 };

@@ -56,9 +56,9 @@ export const usersController = {
           .status(STATUS.NOT_FOUND)
           .json({ error: messages.errors.users.exist });
       }
-      const student = await usersService.update(body, +id);
+      const user = await usersService.update(body, +id);
       return res.status(STATUS.OK).json({
-        data: student,
+        data: user,
       });
     })
   ),
