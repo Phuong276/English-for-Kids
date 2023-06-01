@@ -319,4 +319,244 @@ export const answers = [
     questionId: 16,
     answerText: "didn't",
   },
+  {
+    id: 65,
+    questionId: 65,
+    answerText: "name?",
+  },
+  {
+    id: 66,
+    questionId: 65,
+    answerText: "is",
+  },
+  {
+    id: 67,
+    questionId: 65,
+    answerText: "What",
+  },
+  {
+    id: 68,
+    questionId: 65,
+    answerText: "your",
+  },
+  {
+    id: 69,
+    questionId: 66,
+    answerText: "old",
+  },
+  {
+    id: 70,
+    questionId: 66,
+    answerText: "How",
+  },
+  {
+    id: 71,
+    questionId: 66,
+    answerText: "are",
+  },
+  {
+    id: 72,
+    questionId: 66,
+    answerText: "you?",
+  },
+  {
+    id: 73,
+    questionId: 67,
+    answerText: "you?",
+  },
+  {
+    id: 74,
+    questionId: 67,
+    answerText: "help",
+  },
+  {
+    id: 75,
+    questionId: 67,
+    answerText: "I",
+  },
+  {
+    id: 76,
+    questionId: 67,
+    answerText: "Can",
+  },
+  {
+    id: 77,
+    questionId: 68,
+    answerText: "How",
+  },
+  {
+    id: 78,
+    questionId: 68,
+    answerText: "are",
+  },
+  {
+    id: 79,
+    questionId: 68,
+    answerText: "today?",
+  },
+  {
+    id: 80,
+    questionId: 68,
+    answerText: "you",
+  },
+  {
+    id: 81,
+    questionId: 69,
+    answerText: "has",
+  },
+  {
+    id: 82,
+    questionId: 69,
+    answerText: "My family",
+  },
+  {
+    id: 83,
+    questionId: 69,
+    answerText: "members.",
+  },
+  {
+    id: 84,
+    questionId: 69,
+    answerText: "six",
+  },
+  {
+    id: 85,
+    questionId: 70,
+    answerText: "sister is",
+  },
+  {
+    id: 86,
+    questionId: 70,
+    answerText: "My",
+  },
+  {
+    id: 87,
+    questionId: 70,
+    answerText: "old.",
+  },
+  {
+    id: 88,
+    questionId: 70,
+    answerText: "twenty years",
+  },
+  {
+    id: 89,
+    questionId: 71,
+    answerText: "high school.",
+  },
+  {
+    id: 90,
+    questionId: 71,
+    answerText: "is",
+  },
+  {
+    id: 91,
+    questionId: 71,
+    answerText: "in",
+  },
+  {
+    id: 92,
+    questionId: 71,
+    answerText: "My brother",
+  },
+  {
+    id: 93,
+    questionId: 72,
+    answerText: "very",
+  },
+  {
+    id: 94,
+    questionId: 72,
+    answerText: "is",
+  },
+  {
+    id: 95,
+    questionId: 72,
+    answerText: "happy.",
+  },
+  {
+    id: 96,
+    questionId: 72,
+    answerText: "Our family",
+  },
+  {
+    id: 97,
+    questionId: 73,
+    answerText: "ten",
+  },
+  {
+    id: 98,
+    questionId: 73,
+    answerText: "I am",
+  },
+  {
+    id: 99,
+    questionId: 73,
+    answerText: "years",
+  },
+  {
+    id: 100,
+    questionId: 73,
+    answerText: "old.",
+  },
+  {
+    id: 101,
+    questionId: 74,
+    answerText: "in",
+  },
+  {
+    id: 102,
+    questionId: 74,
+    answerText: "am",
+  },
+  {
+    id: 103,
+    questionId: 74,
+    answerText: "I ",
+  },
+  {
+    id: 104,
+    questionId: 74,
+    answerText: "elementary school.",
+  },
+  {
+    id: 105,
+    questionId: 75,
+    answerText: "hair",
+  },
+  {
+    id: 106,
+    questionId: 75,
+    answerText: "My",
+  },
+  {
+    id: 107,
+    questionId: 75,
+    answerText: "black.",
+  },
+  {
+    id: 108,
+    questionId: 75,
+    answerText: "is",
+  },
+  {
+    id: 109,
+    questionId: 76,
+    answerText: "with you.",
+  },
+  {
+    id: 110,
+    questionId: 76,
+    answerText: "English",
+  },
+  {
+    id: 111,
+    questionId: 76,
+    answerText: "studying",
+  },
+  {
+    id: 112,
+    questionId: 76,
+    answerText: "I'm ",
+  },
 ];

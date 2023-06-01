@@ -27,6 +27,6 @@ export const games = [
     id: 5,
     name: "Grammar",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fgrammar.jpg?alt=media&token=76de7819-342e-4236-850d-343c3236bfe2&_gl=1*1ehjaax*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTU0ODE2Mi4xMy4xLjE2ODU1NDg0MzkuMC4wLjA.",
+      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fgr.png?alt=media&token=c1bccff1-bd28-4303-9e8c-4c5cc780ded3&_gl=1*11t0qlr*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTYwMTY1My4xNi4xLjE2ODU2MDE4NDEuMC4wLjA.",
   },
 ];
