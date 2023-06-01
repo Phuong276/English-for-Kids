@@ -512,7 +512,7 @@ export const answers = [
   {
     id: 103,
     questionId: 74,
-    answerText: "I ",
+    answerText: "I",
   },
   {
     id: 104,
@@ -557,6 +557,6 @@ export const answers = [
   {
     id: 112,
     questionId: 76,
-    answerText: "I'm ",
+    answerText: "I'm",
   },
 ];
