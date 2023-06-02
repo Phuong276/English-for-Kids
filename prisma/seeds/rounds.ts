@@ -300,4 +300,53 @@ export const rounds = [
     image:
       "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fhouse.jpg?alt=media&token=6a7e10db-ac42-4e9e-a797-677b35e78b8f&_gl=1*1o1cpa*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTY5NTAwMS4yNC4xLjE2ODU2OTUwMzUuMC4wLjA.",
   },
+  {
+    id: 43,
+    name: "Picker 1",
+    gameId: 6,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fgame.jpg?alt=media&token=177b6915-3407-429e-bfba-a43953fa86dc&_gl=1*vuvoo*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTU0ODE2Mi4xMy4xLjE2ODU1NTA0NDEuMC4wLjA.",
+  },
+  {
+    id: 44,
+    name: "Picker 2",
+    gameId: 6,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fgame.jpg?alt=media&token=177b6915-3407-429e-bfba-a43953fa86dc&_gl=1*vuvoo*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTU0ODE2Mi4xMy4xLjE2ODU1NTA0NDEuMC4wLjA.",
+  },
+  {
+    id: 45,
+    name: "Picker 3",
+    gameId: 6,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fgame.jpg?alt=media&token=177b6915-3407-429e-bfba-a43953fa86dc&_gl=1*vuvoo*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTU0ODE2Mi4xMy4xLjE2ODU1NTA0NDEuMC4wLjA.",
+  },
+  {
+    id: 46,
+    name: "Picker 4",
+    gameId: 6,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fgame.jpg?alt=media&token=177b6915-3407-429e-bfba-a43953fa86dc&_gl=1*vuvoo*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTU0ODE2Mi4xMy4xLjE2ODU1NTA0NDEuMC4wLjA.",
+  },
+  {
+    id: 47,
+    name: "Picker 5",
+    gameId: 6,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fgame.jpg?alt=media&token=177b6915-3407-429e-bfba-a43953fa86dc&_gl=1*vuvoo*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTU0ODE2Mi4xMy4xLjE2ODU1NTA0NDEuMC4wLjA.",
+  },
+  {
+    id: 48,
+    name: "Picker 6",
+    gameId: 6,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fgame.jpg?alt=media&token=177b6915-3407-429e-bfba-a43953fa86dc&_gl=1*vuvoo*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTU0ODE2Mi4xMy4xLjE2ODU1NTA0NDEuMC4wLjA.",
+  },
+  {
+    id: 49,
+    name: "Letter",
+    gameId: 7,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fgame.jpg?alt=media&token=177b6915-3407-429e-bfba-a43953fa86dc&_gl=1*vuvoo*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTU0ODE2Mi4xMy4xLjE2ODU1NTA0NDEuMC4wLjA.",
+  },
 ];
