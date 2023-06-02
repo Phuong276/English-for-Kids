@@ -25,8 +25,14 @@ export const games = [
   },
   {
     id: 5,
-    name: "Grammar",
+    name: "Word Matching",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fgr.png?alt=media&token=c1bccff1-bd28-4303-9e8c-4c5cc780ded3&_gl=1*11t0qlr*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTYwMTY1My4xNi4xLjE2ODU2MDE4NDEuMC4wLjA.",
+      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fword.jpeg?alt=media&token=cd8caa01-05eb-4590-b026-d46bc40ca320&_gl=1*1edpb1i*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTYxMDk5MC4xOC4xLjE2ODU2MTEwMjguMC4wLjA.",
+  },
+  {
+    id: 6,
+    name: "Picture Picker",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fmonkey.png?alt=media&token=81c07b65-0b2f-4df9-8ced-3804c9afeb10&_gl=1*1tdit2p*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTY4MjE2OS4yMS4xLjE2ODU2ODIxNzUuMC4wLjA.",
   },
 ];
