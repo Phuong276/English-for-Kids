@@ -39,6 +39,6 @@ export const games = [
     id: 7,
     name: "Picture Letter",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fmonkey.png?alt=media&token=81c07b65-0b2f-4df9-8ced-3804c9afeb10&_gl=1*1tdit2p*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTY4MjE2OS4yMS4xLjE2ODU2ODIxNzUuMC4wLjA.",
+      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fletter.png?alt=media&token=3a9313a5-d7d0-4450-a68c-e5eb098b1e48&_gl=1*jtyg4s*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTk0OTkzNC4yNi4xLjE2ODU5NTA1MjAuMC4wLjA.",
   },
 ];

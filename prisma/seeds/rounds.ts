@@ -344,7 +344,56 @@ export const rounds = [
   },
   {
     id: 49,
-    name: "Letter",
+    name: "Letter Appearance",
+    gameId: 7,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fappearance.jpg?alt=media&token=82f89c07-1324-43c0-8d72-4bc64ef311c7&_gl=1*1rpgfrf*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTk0OTkzNC4yNi4xLjE2ODU5NTA5OTMuMC4wLjA.",
+  },
+  {
+    id: 50,
+    name: "Letter Sport",
+    gameId: 7,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fbadminton.jpeg?alt=media&token=817fd304-004f-4b79-b071-fcb1dc8b54e6&_gl=1*1koy9kg*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTU5MTg2Ni4xNS4xLjE2ODU1OTUzMDYuMC4wLjA.",
+  },
+  {
+    id: 51,
+    name: "Letter 1",
+    gameId: 7,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fgame.jpg?alt=media&token=177b6915-3407-429e-bfba-a43953fa86dc&_gl=1*vuvoo*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTU0ODE2Mi4xMy4xLjE2ODU1NTA0NDEuMC4wLjA.",
+  },
+  {
+    id: 52,
+    name: "Letter 2",
+    gameId: 7,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fgame.jpg?alt=media&token=177b6915-3407-429e-bfba-a43953fa86dc&_gl=1*vuvoo*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTU0ODE2Mi4xMy4xLjE2ODU1NTA0NDEuMC4wLjA.",
+  },
+  {
+    id: 53,
+    name: "Letter 3",
+    gameId: 7,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fgame.jpg?alt=media&token=177b6915-3407-429e-bfba-a43953fa86dc&_gl=1*vuvoo*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTU0ODE2Mi4xMy4xLjE2ODU1NTA0NDEuMC4wLjA.",
+  },
+  {
+    id: 54,
+    name: "Letter 4",
+    gameId: 7,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fgame.jpg?alt=media&token=177b6915-3407-429e-bfba-a43953fa86dc&_gl=1*vuvoo*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTU0ODE2Mi4xMy4xLjE2ODU1NTA0NDEuMC4wLjA.",
+  },
+  {
+    id: 55,
+    name: "Letter 5",
+    gameId: 7,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fgame.jpg?alt=media&token=177b6915-3407-429e-bfba-a43953fa86dc&_gl=1*vuvoo*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTU0ODE2Mi4xMy4xLjE2ODU1NTA0NDEuMC4wLjA.",
+  },
+  {
+    id: 56,
+    name: "Letter 6",
     gameId: 7,
     image:
       "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fgame.jpg?alt=media&token=177b6915-3407-429e-bfba-a43953fa86dc&_gl=1*vuvoo*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTU0ODE2Mi4xMy4xLjE2ODU1NTA0NDEuMC4wLjA.",
