@@ -358,10 +358,10 @@ export const rounds = [
   },
   {
     id: 51,
-    name: "Letter 1",
+    name: "Letter Animals",
     gameId: 7,
     image:
-      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fgame.jpg?alt=media&token=177b6915-3407-429e-bfba-a43953fa86dc&_gl=1*vuvoo*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTU0ODE2Mi4xMy4xLjE2ODU1NTA0NDEuMC4wLjA.",
+      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2F.png?alt=media&token=b2d17fc0-ecea-4645-96e0-29e62a7a216d&_gl=1*9jip2i*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTU0ODE2Mi4xMy4xLjE2ODU1NTAxNjYuMC4wLjA.",
   },
   {
     id: 52,
