@@ -12,6 +12,7 @@ export const roundsRepo = {
       take: pageSize,
       where: {
         gameId: idGame,
+        isDeleted: false,
       },
     });
     return rounds;
@@ -31,6 +32,35 @@ export const roundsRepo = {
       },
       data: {
         image: req.image,
+      },
+    });
+    return round;
+  },
+  delete: async (id: number) => {
+    const student = await prisma.round.update({
+      where: {
+        id: id,
+      },
+      data: {
+        isDeleted: true,
+      },
+    });
+    return student;
+  },
+  create: async (req: Request) => {
+    const round = await prisma.round.create({
+      data: {
+        name: req.name,
+        image: req.image,
+        gameId: req.gameId,
+      },
+    });
+    return round;
+  },
+  findOneByName: async (name: string) => {
+    const round = await prisma.round.findFirst({
+      where: {
+        name: name,
       },
     });
     return round;

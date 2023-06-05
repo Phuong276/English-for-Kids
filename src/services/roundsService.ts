@@ -17,4 +17,15 @@ export const roundsService = {
     const round = await roundsRepo.update(req, id);
     return round;
   },
+  delete: async (id: number) => {
+    const round = await roundsRepo.delete(id);
+    return round;
+  },
+  create: async (req: Request) => {
+    const round = await roundsRepo.create(req);
+    return round;
+  },
+  findOneByName: async (name: string) => {
+    return await roundsRepo.findOneByName(name);
+  },
 };

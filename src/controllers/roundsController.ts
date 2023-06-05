@@ -47,4 +47,31 @@ export const roundsController = {
       });
     })
   ),
+  delete: combineMiddleware(
+    isAdminPermission,
+    handleMiddleware(async (req: Request, res: Response) => {
+      const id = +req.params.id;
+      const user = await roundsService.delete(id);
+      return res.status(STATUS.OK).json({
+        data: user,
+      });
+    })
+  ),
+  create: combineMiddleware(
+    handleMiddleware(async (req: Request, res: Response) => {
+      const body = req.body;
+      const checkRound = await roundsService.findOneByName(body.name);
+      if (checkRound) {
+        return res
+          .status(STATUS.NOT_FOUND)
+          .json({ error: messages.errors.rounds.exist });
+      }
+      const user = await roundsService.create(body);
+      return res.status(200).json({
+        data: {
+          user,
+        },
+      });
+    })
+  ),
 };

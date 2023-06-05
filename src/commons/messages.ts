@@ -12,6 +12,7 @@ export const messages = {
     },
     rounds: {
       notFound: "GAME_NOT_FOUND",
+      exist: "NAME_ALREADY_EXISTS",
     },
   },
   auth: {
