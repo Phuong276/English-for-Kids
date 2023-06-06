@@ -14,6 +14,9 @@ export const messages = {
       notFound: "GAME_NOT_FOUND",
       exist: "NAME_ALREADY_EXISTS",
     },
+    questions: {
+      notFound: "QUESTION_NOT_FOUND",
+    },
   },
   auth: {
     passwordInvalid: "PASSWORD_INCORRECT",

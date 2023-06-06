@@ -27,7 +27,7 @@ export const usersRepo = {
       take: pageSize,
       where: {
         isDeleted: false,
-        role: Role.USER
+        role: Role.USER,
       },
     });
     return users;
@@ -57,8 +57,8 @@ export const usersRepo = {
     });
     return user;
   },
-   delete: async (id: number) => {
-    const student = await prisma.user.update({
+  delete: async (id: number) => {
+    const user = await prisma.user.update({
       where: {
         id: id,
       },
@@ -66,6 +66,6 @@ export const usersRepo = {
         isDeleted: true,
       },
     });
-    return student;
+    return user;
   },
 };

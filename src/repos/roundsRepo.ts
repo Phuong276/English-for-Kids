@@ -32,6 +32,7 @@ export const roundsRepo = {
       },
       data: {
         image: req.image,
+        name: req.name,
       },
     });
     return round;

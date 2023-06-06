@@ -58,6 +58,7 @@ export const roundsController = {
     })
   ),
   create: combineMiddleware(
+    isAdminPermission,
     handleMiddleware(async (req: Request, res: Response) => {
       const body = req.body;
       const checkRound = await roundsService.findOneByName(body.name);
