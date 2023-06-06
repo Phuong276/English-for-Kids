@@ -559,4 +559,308 @@ export const answers = [
     questionId: 76,
     answerText: "I'm",
   },
+  {
+    id: 112,
+    questionId: 76,
+    answerText: "I'm",
+  },
+  {
+    id: 129,
+    questionId: 106,
+    answerText: "pink",
+  },
+  {
+    id: 130,
+    questionId: 106,
+    answerText: "bee",
+  },
+  {
+    id: 131,
+    questionId: 106,
+    answerText: "peach",
+  },
+  {
+    id: 132,
+    questionId: 106,
+    answerText: "pear",
+  },
+  {
+    id: 113,
+    questionId: 107,
+    answerText: "grapefruit",
+  },
+  {
+    id: 114,
+    questionId: 107,
+    answerText: "watermelon",
+  },
+  {
+    id: 115,
+    questionId: 107,
+    answerText: "peach",
+  },
+  {
+    id: 116,
+    questionId: 107,
+    answerText: "dragon fruit",
+  },
+  {
+    id: 133,
+    questionId: 108,
+    answerText: "guava",
+  },
+  {
+    id: 134,
+    questionId: 108,
+    answerText: "cherry",
+  },
+  {
+    id: 135,
+    questionId: 108,
+    answerText: "grape",
+  },
+  {
+    id: 136,
+    questionId: 108,
+    answerText: "durian",
+  },
+  {
+    id: 117,
+    questionId: 109,
+    answerText: "ambarella",
+  },
+  {
+    id: 118,
+    questionId: 109,
+    answerText: "annona",
+  },
+  {
+    id: 119,
+    questionId: 109,
+    answerText: "mango",
+  },
+  {
+    id: 120,
+    questionId: 109,
+    answerText: "plum",
+  },
+  {
+    id: 121,
+    questionId: 110,
+    answerText: "jackfruit",
+  },
+  {
+    id: 122,
+    questionId: 110,
+    answerText: "tamarind",
+  },
+  {
+    id: 123,
+    questionId: 110,
+    answerText: "banana",
+  },
+  {
+    id: 124,
+    questionId: 110,
+    answerText: "orange",
+  },
+  {
+    id: 125,
+    questionId: 111,
+    answerText: "cherry",
+  },
+  {
+    id: 126,
+    questionId: 111,
+    answerText: "watermelon",
+  },
+  {
+    id: 127,
+    questionId: 111,
+    answerText: "apple",
+  },
+  {
+    id: 128,
+    questionId: 111,
+    answerText: "peach",
+  },
+  {
+    id: 137,
+    questionId: 112,
+    answerText: "giraffe",
+  },
+  {
+    id: 138,
+    questionId: 112,
+    answerText: "bee",
+  },
+  {
+    id: 139,
+    questionId: 112,
+    answerText: "dog",
+  },
+  {
+    id: 140,
+    questionId: 112,
+    answerText: "duck",
+  },
+  {
+    id: 141,
+    questionId: 113,
+    answerText: "bee",
+  },
+  {
+    id: 142,
+    questionId: 113,
+    answerText: "bird",
+  },
+  {
+    id: 143,
+    questionId: 113,
+    answerText: "lion",
+  },
+  {
+    id: 144,
+    questionId: 113,
+    answerText: "cat",
+  },
+  {
+    id: 145,
+    questionId: 114,
+    answerText: "owl",
+  },
+  {
+    id: 146,
+    questionId: 114,
+    answerText: "fish",
+  },
+  {
+    id: 147,
+    questionId: 114,
+    answerText: "monkey",
+  },
+  {
+    id: 148,
+    questionId: 114,
+    answerText: "crocodile",
+  },
+  {
+    id: 149,
+    questionId: 115,
+    answerText: "gecko",
+  },
+  {
+    id: 150,
+    questionId: 115,
+    answerText: "dinosaur",
+  },
+  {
+    id: 151,
+    questionId: 115,
+    answerText: "parrot",
+  },
+  {
+    id: 152,
+    questionId: 115,
+    answerText: "crocodile",
+  },
+  {
+    id: 153,
+    questionId: 116,
+    answerText: "I'm happy to watch the movie.",
+  },
+  {
+    id: 154,
+    questionId: 116,
+    answerText: "I like doaemon movies.",
+  },
+  {
+    id: 155,
+    questionId: 116,
+    answerText: "This movie is so bad.",
+  },
+  {
+    id: 156,
+    questionId: 116,
+    answerText: "I don't like music.",
+  },
+  {
+    id: 157,
+    questionId: 117,
+    answerText: "My father is a policeman.",
+  },
+  {
+    id: 158,
+    questionId: 117,
+    answerText: "My father likes police.",
+  },
+  {
+    id: 159,
+    questionId: 117,
+    answerText: "My father is very happy.",
+  },
+  {
+    id: 160,
+    questionId: 117,
+    answerText: "I love being a policeman.",
+  },
+  {
+    id: 161,
+    questionId: 118,
+    answerText: "I don't like to play football.",
+  },
+  {
+    id: 162,
+    questionId: 118,
+    answerText: "I love being a policeman.",
+  },
+  {
+    id: 163,
+    questionId: 118,
+    answerText: "I like doaemon movies.",
+  },
+  {
+    id: 164,
+    questionId: 118,
+    answerText: "I play football in my free time.",
+  },
+  {
+    id: 165,
+    questionId: 119,
+    answerText: "policeman",
+  },
+  {
+    id: 166,
+    questionId: 119,
+    answerText: "tablle",
+  },
+  {
+    id: 167,
+    questionId: 119,
+    answerText: "rabbit",
+  },
+  {
+    id: 168,
+    questionId: 119,
+    answerText: "chair",
+  }, {
+    id: 169,
+    questionId: 120,
+    answerText: "policeman",
+  },
+  {
+    id: 170,
+    questionId: 120,
+    answerText: "tablle",
+  },
+  {
+    id: 171,
+    questionId: 120,
+    answerText: "rabbit",
+  },
+  {
+    id: 172,
+    questionId: 120,
+    answerText: "chair",
+  },
 ];
