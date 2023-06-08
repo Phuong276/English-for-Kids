@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import { STATUS } from "../commons";
+import { IPointUser } from "../commons/common";
 import { combineMiddleware, handleMiddleware } from "../helpers";
 import { pointsService } from "../services/pointsService";
 
@@ -52,6 +53,28 @@ export const pointsController = {
         data: {
           point,
         },
+      });
+    })
+  ),
+  getPointUser: combineMiddleware(
+    handleMiddleware(async (req: Request, res: Response) => {
+      const points = await pointsService.getPointUser();
+      const pointusers: IPointUser[] = [];
+      points.map((item) => {
+        const pointuser: IPointUser = {
+          username: item.username,
+          point: 0,
+        };
+        item.points.map((item) => {
+          pointuser.point += item.question.point;
+        });
+        pointusers.push(pointuser);
+      });
+      pointusers.sort((a, b) => {
+        return b.point - a.point;
+      });
+      return res.status(STATUS.OK).json({
+        data: { pointusers },
       });
     })
   ),

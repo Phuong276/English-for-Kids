@@ -1,5 +1,6 @@
 import prisma from "../utils/db";
 import { Request } from "express-validator/src/base";
+import { Role } from "@prisma/client";
 
 export const pointsRepo = {
   createPoint: async (req: Request) => {
@@ -31,5 +32,26 @@ export const pointsRepo = {
       },
     });
     return point;
+  },
+  getPointUser: async () => {
+    const points = await prisma.user.findMany({
+      skip: 0,
+      take: 10,
+      where: {
+        role: Role.USER,
+      },
+      include: {
+        points: {
+          select: {
+            question: {
+              select: {
+                point: true,
+              },
+            },
+          },
+        },
+      },
+    });
+    return points;
   },
 };

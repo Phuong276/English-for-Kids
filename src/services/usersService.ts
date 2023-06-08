@@ -25,4 +25,11 @@ export const usersService = {
     const user = await usersRepo.delete(id);
     return user;
   },
+  infor: async (id: number) => {
+    return await usersRepo.infor(id);
+  },
+  getPointUser: async () => {
+    const points = await usersRepo.getPointUser();
+    return points;
+  },
 };

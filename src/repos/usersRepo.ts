@@ -9,6 +9,9 @@ export const usersRepo = {
       where: {
         id: id,
       },
+      include: {
+        points: true,
+      },
     });
     return user as User;
   },
@@ -67,5 +70,39 @@ export const usersRepo = {
       },
     });
     return user;
+  },
+  infor: async (id: number) => {
+    const user = await prisma.user.findUnique({
+      where: {
+        id: id,
+      },
+      include: {
+        points: {
+          include: {
+            question: true,
+          },
+        },
+      },
+    });
+    return user;
+  },
+  getPointUser: async () => {
+    const points = await prisma.user.findMany({
+      where: {
+        role: Role.USER,
+      },
+      include: {
+        points: {
+          select: {
+            question: {
+              select: {
+                point: true,
+              },
+            },
+          },
+        },
+      },
+    });
+    return points;
   },
 };

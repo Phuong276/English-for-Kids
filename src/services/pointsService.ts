@@ -15,4 +15,8 @@ export const pointsService = {
     const point = await pointsRepo.updatePointStatus(req, id);
     return point;
   },
+  getPointUser: async () => {
+    const points = await pointsRepo.getPointUser();
+    return points;
+  },
 };
