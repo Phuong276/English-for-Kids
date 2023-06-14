@@ -29,4 +29,20 @@ export const questionsService = {
     const question = await questionRepo.create(req);
     return question;
   },
+  addAnswers: async (req: Request) => {
+    const answer = await questionRepo.addAnswers(req);
+    return answer;
+  },
+  deleteAnswers: async (id: number) => {
+    const answer = await questionRepo.deleteAnswers(id);
+    return answer;
+  },
+  getAnswers: async (id: number) => {
+    const answers = await questionRepo.getAnswers(id);
+    return answers;
+  },
+  putAnswers: async (id: number, req: Request) => {
+    const question = await questionRepo.putAnswers(id, req);
+    return question;
+  },
 };

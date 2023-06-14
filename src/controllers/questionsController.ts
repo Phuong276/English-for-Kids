@@ -69,4 +69,53 @@ export const questionsController = {
       });
     })
   ),
+  addAnswers: combineMiddleware(
+    isAdminPermission,
+    handleMiddleware(async (req: Request, res: Response) => {
+      const body = req.body;
+      const answer = await questionsService.addAnswers(body);
+      return res.status(200).json({
+        data: {
+          answer,
+        },
+      });
+    })
+  ),
+  deleteAnswers: combineMiddleware(
+    isAdminPermission,
+    handleMiddleware(async (req: Request, res: Response) => {
+      const id = +req.params.id;
+      const answer = await questionsService.deleteAnswers(id);
+      return res.status(200).json({
+        data: {
+          answer,
+        },
+      });
+    })
+  ),
+  getAnswers: combineMiddleware(
+    isAdminPermission,
+    handleMiddleware(async (req: Request, res: Response) => {
+      const id = +req.params.id;
+      const answers = await questionsService.getAnswers(id);
+      return res.status(200).json({
+        data: {
+          answers,
+        },
+      });
+    })
+  ),
+  putAnswers: combineMiddleware(
+    isAdminPermission,
+    handleMiddleware(async (req: Request, res: Response) => {
+      const id = +req.params.id;
+      const body = req.body;
+      const answer = await questionsService.putAnswers(id, body);
+      return res.status(200).json({
+        data: {
+          answer,
+        },
+      });
+    })
+  ),
 };

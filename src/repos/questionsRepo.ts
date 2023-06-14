@@ -67,4 +67,40 @@ export const questionRepo = {
     });
     return question;
   },
+  addAnswers: async (req: Request) => {
+    const answer = await prisma.answer.create({
+      data: {
+        questionId: req.questionId,
+        answerText: req.answerText,
+      },
+    });
+    return answer;
+  },
+  deleteAnswers: async (id: number) => {
+    const answer = await prisma.answer.delete({
+      where: {
+        id: id,
+      },
+    });
+    return answer;
+  },
+  getAnswers: async (id: number) => {
+    const answers = await prisma.answer.findMany({
+      where: {
+        questionId: id,
+      },
+    });
+    return answers;
+  },
+  putAnswers: async (id: number, req: Request) => {
+    const answer = await prisma.answer.update({
+      where: {
+        id: id,
+      },
+      data: {
+        answerText: req.answerText,
+      },
+    });
+    return answer;
+  },
 };
