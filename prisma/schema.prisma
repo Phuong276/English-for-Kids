@@ -13,7 +13,6 @@ model User {
   password  String
   name      String
   role      Role
-  levels    Level[]
   points    Point[]
 
   isDeleted Boolean         @default(false) @map("is_deleted")
@@ -41,7 +40,6 @@ model Round {
   name      String          @unique
   gameId    Int             @map(name: "game_id")
   game      Game            @relation(fields: [gameId], references: [id])
-  levels    Level[]
   questions Question[]
   image     String
 
@@ -51,21 +49,6 @@ model Round {
   updatedAt DateTime        @default(now()) @map("updated_at")
 
   @@map("rounds")
-}
-
-model Level {
-  id        Int             @id @default(autoincrement())
-  roundId   Int             @map(name: "round_id")
-  round     Round           @relation(fields: [roundId], references: [id])
-  userId    Int             @map(name: "user_id")
-  user      User            @relation(fields: [userId], references: [id])
-  status    Boolean
-
-  isDeleted Boolean         @default(false) @map("is_deleted")
-  createdAt DateTime        @default(now()) @map("created_at")
-  updatedAt DateTime        @default(now()) @map("updated_at")
-
-  @@map("levels")
 }
 
 model Question {
