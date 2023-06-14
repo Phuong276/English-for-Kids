@@ -39,6 +39,7 @@ export const pointsRepo = {
       take: 10,
       where: {
         role: Role.USER,
+        isDeleted: false,
       },
       include: {
         points: {
