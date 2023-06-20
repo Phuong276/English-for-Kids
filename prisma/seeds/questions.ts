@@ -1199,7 +1199,7 @@ export const questions = [
     questionAudio:
       "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fsick.mp3?alt=media&token=d4e59641-bca9-4a09-83aa-06bee67cd121&_gl=1*10hwz7g*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTk3NzAzNi4zMC4xLjE2ODU5NzcwNjIuMC4wLjA.",
     questionImage:
-      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fsick.jpg?alt=media&token=e7f54d75-9e6a-485a-ac70-b8e68648282f&_gl=1*1idycsg*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTk3NzAzNi4zMC4xLjE2ODU5NzcwNTUuMC4wLjA.",
+      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fsick.jpg?alt=media&token=fe96d9be-f3c6-415f-9350-62886ae0c855",
   },
   {
     id: 103,
@@ -1211,7 +1211,7 @@ export const questions = [
     questionAudio:
       "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fbaby.mp3?alt=media&token=43a6ffcc-d9c4-4d4e-bca9-57c85526034c&_gl=1*1ctlylf*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTk3NzAzNi4zMC4xLjE2ODU5NzcwODAuMC4wLjA.",
     questionImage:
-      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fbaby.jpg?alt=media&token=b36caa41-0023-41bd-ad35-25100f9a30db&_gl=1*4p4olt*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTk3NzAzNi4zMC4xLjE2ODU5NzcwNzUuMC4wLjA.",
+      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fbaby.jpg?alt=media&token=e34e3b34-4c60-47e9-95c3-827d50b75dec",
   },
   {
     id: 104,
@@ -1235,7 +1235,7 @@ export const questions = [
     questionAudio:
       "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fchubby.mp3?alt=media&token=9111037a-960d-4ac3-8122-f44239a4000f&_gl=1*1v662dr*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTk3NzAzNi4zMC4xLjE2ODU5NzcxMjguMC4wLjA.",
     questionImage:
-      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fchubby.jpg?alt=media&token=f701601f-c2ed-427f-99fb-466e06ef6b22&_gl=1*1cxb57c*_ga*ODgzMDU0MjMxLjE2ODQ1OTA5NjY.*_ga_CW55HF8NVT*MTY4NTk3NzAzNi4zMC4xLjE2ODU5NzcxMjAuMC4wLjA.",
+      "https://firebasestorage.googleapis.com/v0/b/english-for-kids-daa46.appspot.com/o/files%2Fchuppy.jpg?alt=media&token=413d1537-44e2-4fa5-934e-0800960c93bd",
   },
   {
     id: 106,
