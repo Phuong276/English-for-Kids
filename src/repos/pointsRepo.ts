@@ -35,8 +35,6 @@ export const pointsRepo = {
   },
   getPointUser: async () => {
     const points = await prisma.user.findMany({
-      skip: 0,
-      take: 10,
       where: {
         role: Role.USER,
         isDeleted: false,

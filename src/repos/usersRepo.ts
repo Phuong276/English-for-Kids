@@ -19,7 +19,6 @@ export const usersRepo = {
     const user = await prisma.user.findFirst({
       where: {
         username: username,
-        isDeleted: false,
       },
     });
     return user as User;

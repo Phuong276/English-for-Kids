@@ -73,6 +73,7 @@ export const pointsController = {
       pointusers.sort((a, b) => {
         return b.point - a.point;
       });
+      pointusers.splice(10);
       return res.status(STATUS.OK).json({
         data: { pointusers },
       });
